@@ -6,3 +6,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #3f51b5;
     margin-left: 75rem;
 }
+
+.cardss{
+    float: right;
+    position: relative;
+    top: -7px;
+    // padding: auto;
+}
+.mat-raised-button.mat-warn, .mat-fab.mat-warn, .mat-mini-fab.mat-warn {
+    color: #fff;
+    padding: 0px;
+}

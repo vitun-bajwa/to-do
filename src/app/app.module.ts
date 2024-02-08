@@ -9,7 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MAT_DIALOG_DATA, MAT_DIALOG_DEFAULT_OPTIONS, MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSortModule } from '@angular/material/sort';
@@ -23,8 +23,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatChipsModule } from '@angular/material/chips';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SubItemModalComponent } from './sub-item-modal/sub-item-modal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdditemComponent } from './additem/additem.component';
 const module = [
   MatIconModule,
   MatFormFieldModule,
@@ -50,7 +50,7 @@ const module = [
   declarations: [
     AppComponent,
     ModalComponent,
-    SubItemModalComponent
+    AdditemComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,9 +59,13 @@ const module = [
     ...module,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    // MatDialog,
+    // MatDialogRef,
+    // MAT_DIALOG_DATA
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

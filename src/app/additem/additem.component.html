@@ -1,0 +1,14 @@
+    <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="data"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="color" matInput [(ngModel)]="inputColor.color" placeholder="Select color">
+      </mat-form-field>
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="inputColor.position">
+        <mat-radio-button value="top">Top</mat-radio-button>
+        <mat-radio-button value="bottom">Bottom</mat-radio-button>
+      </mat-radio-group>
+      <button mat-raised-button color="warn" (click)="register()">
+        submit
+      </button>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubItemModalComponent } from './sub-item-modal.component';
+import { AdditemComponent } from './additem.component';
 
-describe('SubItemModalComponent', () => {
-  let component: SubItemModalComponent;
-  let fixture: ComponentFixture<SubItemModalComponent>;
+describe('AdditemComponent', () => {
+  let component: AdditemComponent;
+  let fixture: ComponentFixture<AdditemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubItemModalComponent ]
+      declarations: [ AdditemComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SubItemModalComponent);
+    fixture = TestBed.createComponent(AdditemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

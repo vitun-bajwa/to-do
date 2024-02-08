@@ -1,19 +1,7 @@
-<form [formGroup]="profileForm" ngClass="form" >
     <mat-form-field appearance="outline">
-        <mat-label for="first-name">First Name</mat-label>
-        <input matInput formControlName="categoryName"/>
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="data"/>
       </mat-form-field>
-    </form>
-    <!-- <button mat-raised-button color="warn" ngClass="closebtn" (click)="this.dialogRef.close()">
-        Close
-    </button> -->
     <button mat-raised-button color="warn" (click)="register()">
-        add
+        submit
     </button>
-    <div>
-      
-        <!-- <button class="example-button-row btn" [disabled]="profileForm.invalid" type="submit" mat-flat-button>
-          {{ changeBtn ? "Update" : "Submit" }}
-        </button>
-      </div> -->
-    <!-- <button class="prim" mat-raised-button color="primary">adddd</button> -->
