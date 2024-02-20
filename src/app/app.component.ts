@@ -55,7 +55,8 @@ export class AppComponent {
             let newSet = { name: da.data, color: da.color };
             if (da.position === 'top') {
               this.arr[index].sets = [newSet, ...this.arr[index].sets];
-            } else {
+            } 
+            else {
               this.arr[index].sets = [...this.arr[index].sets, newSet];
             }
           }
